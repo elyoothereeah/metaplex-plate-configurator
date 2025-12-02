@@ -1067,18 +1067,7 @@ export default function App() {
                 <div className="text-[11px] text-gray-500">
                   {t("total_ex_vat_label", { amount: formatCurrency(totalPriceExcl) })}
                 </div>
-              </div>
-              <div className="text-xs text-gray-500">
-                {t("price_note", { area: areaCm2.toFixed(0) })}
-                {processingType === "cut_milling" && millingPricePerPlate > 0 && (
-                  <>
-                    <br />
-                    {t("milling_note", {
-                      milling: formatCurrency(millingPricePerPlate * (1 + VAT_RATE)),
-                    })}
-                  </>
-                )}
-              </div>
+              </div>  
             </div>
 
             <button
